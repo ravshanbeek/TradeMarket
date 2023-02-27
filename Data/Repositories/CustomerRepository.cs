@@ -13,7 +13,7 @@ namespace Data.Repositories
 {
     public class CustomerRepository : ICustomerRepository
     {
-        private readonly TradeMarketDbContext context;
+        private readonly TradeMarketDbContext context; 
         public CustomerRepository(TradeMarketDbContext context)
         {
             this.context = context;

@@ -35,7 +35,10 @@ namespace Data.Repositories
 
         public async Task<IEnumerable<Product>> GetAllAsync()
         {
-            return await context.Products.AsNoTracking().ToListAsync();
+            
+            Console.WriteLine("test");
+            var k= await context.Products.AsNoTracking().ToListAsync();
+            return k;
         }
 
         public async Task<IEnumerable<Product>> GetAllWithDetailsAsync()

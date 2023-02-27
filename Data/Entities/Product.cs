@@ -6,7 +6,7 @@ namespace Data.Entities
     {
         public int ProductCategoryId { get; set; }
         public string ProductName { get; set; }
-        public decimal Price { get; set; }
+        public double Price { get; set; }
 
 
 

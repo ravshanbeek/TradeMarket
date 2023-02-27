@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Data.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -63,7 +63,7 @@ namespace Data.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     ProductCategoryId = table.Column<int>(nullable: false),
                     ProductName = table.Column<string>(nullable: true),
-                    Price = table.Column<decimal>(nullable: false)
+                    Price = table.Column<double>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -105,8 +105,8 @@ namespace Data.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     ReceiptId = table.Column<int>(nullable: false),
                     ProductId = table.Column<int>(nullable: false),
-                    DiscountUnitPrice = table.Column<decimal>(nullable: false),
-                    UnitPrice = table.Column<decimal>(nullable: false),
+                    DiscountUnitPrice = table.Column<double>(nullable: false),
+                    UnitPrice = table.Column<double>(nullable: false),
                     Quantity = table.Column<int>(nullable: false)
                 },
                 constraints: table =>

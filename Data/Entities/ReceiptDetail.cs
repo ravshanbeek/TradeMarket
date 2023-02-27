@@ -8,8 +8,8 @@ namespace Data.Entities
     {
         public int ReceiptId { get; set; }
         public int ProductId { get; set; }
-        public decimal DiscountUnitPrice { get; set; }
-        public decimal UnitPrice { get; set; }
+        public double DiscountUnitPrice { get; set; }
+        public double UnitPrice { get; set; }
         public int Quantity { get; set; }
 
 
